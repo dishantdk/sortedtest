@@ -14,7 +14,6 @@ import {
 import Home from './src/components/Home/Home';
 import Profile from './src/components/Profile/profile';
 
-const prefix = Platform.OS == 'android' ? 'awesomeproject://awesomeproject/' : 'awesomeproject://';
 
 const AppSatck = StackNavigator({
   Home: { screen: Home, path: 'home'},
@@ -24,7 +23,7 @@ const AppSatck = StackNavigator({
 );
 
 const App = () => (
-  <AppSatck uriPrefix={prefix} />
+  <AppSatck />
 );
 
 export default App;
